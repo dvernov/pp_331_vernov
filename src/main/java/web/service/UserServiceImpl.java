@@ -6,6 +6,7 @@ import web.DAO.UserDAO;
 import web.model.User;
 
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -15,7 +16,26 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
+    public List<User> getAllUsers() {
+        return userDAO.getAllUsers();
+    }
+
+    @Override
+    @Transactional
+    public void deleteUser(Long id) {
+        userDAO.deleteUser(id);
+    }
+
+    @Override
+    @Transactional
     public void addUser(User user) {
         userDAO.addUser(user);
     }
+
+    @Override
+    @Transactional
+    public User getUser(Long id) {
+        return userDAO.getUser(id);
+    }
+
 }
