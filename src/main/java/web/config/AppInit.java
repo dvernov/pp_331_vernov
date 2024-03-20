@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 @Configuration
-@ComponentScan("web")
+//@ComponentScan("web")
 //@EnableWebMvc
 public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
 

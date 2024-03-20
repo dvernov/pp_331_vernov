@@ -6,6 +6,22 @@
     <title>Title4</title>
 </head>
 <body>
-kekekeke
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="user : ${userList}">
+        <td th:text="${user.getFirstName()}">Name</td>
+        <td th:text="${user.getLastName()}">Last Name</td>
+    </tr>
+    </tbody>
+</table>
+
+<button type="button" th:onclick=""></button>
 </body>
 </html>

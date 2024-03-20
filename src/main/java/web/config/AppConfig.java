@@ -26,7 +26,7 @@ import java.util.Properties;
 @Configuration
 @ComponentScan("web")
 @EnableTransactionManagement
-//@EnableWebMvc
+@EnableWebMvc
 public class AppConfig implements WebMvcConfigurer {
     private final ApplicationContext applicationContext;
 
