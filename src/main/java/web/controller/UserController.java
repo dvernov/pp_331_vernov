@@ -27,7 +27,7 @@ public class UserController {
         userService.saveUser(user);
         return "redirect:/";
     }
-    @RequestMapping("/addUser")
+    @GetMapping("/addUser")
     public String addUser(Model model) {
         User user = new User();
         model.addAttribute("userForm", user);
